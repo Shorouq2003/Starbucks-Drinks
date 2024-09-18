@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a2f50f7889.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/logo.png">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+
+            <!-- logo -->
+            <a href="#" class="logo"><img src="images/logo.png" alt="logo"  class="logo"></a>
+            <!-- nav -->
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">What's new</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="contact">
+            <div class="textBox">
+                <h2>It's not just Coffee <br>It's <span>Starbucks</span></h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum tempore sed officiis? Suscipit sint a accusantium esse repellat, alias dolorum exercitationem distinctio ex, libero quam dolor itaque explicabo commodi perspiciatis. </p>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div class="imgBox">
+                <img src="images/img1.png" alt="" class="starbucks">
+            </div>
+        </div>
+
+        <ul class="thumb">
+            <li><img src="images/thumb1.png" alt="" onclick="imgSlider('images/img1.png'); changeCircleColor('#017143')"></li>
+            <li><img src="images/thumb3.png" alt="" onclick="imgSlider('images/img2.png'); changeCircleColor('#d752b1')"  ></li>
+            <li><img src="images/thumb2.png" alt="" onclick="imgSlider('images/img3.png'); changeCircleColor('#eb7495')"></li>
+        </ul>
+
+        <ul class="sci">
+            <li><a href="#"><i class="fa-brands fa-facebook" onclick="imgSlider('img1.png'); changrCircleColor('#017143')"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-twitter" ></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+    </section>
+         <!-- js -->
+    <script type="text/javascript">
+          function imgSlider(e){
+            document.querySelector('.starbucks').src=e;
+          }
+
+          function changeCircleColor(color){
+            const circle=document.querySelector('.circle');
+            circle.style.background=color;
+          }
+
+    </script>
+</body>
+</html>
+
